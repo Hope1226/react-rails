@@ -14,7 +14,7 @@ const HelloWorld = () => {
 
   const showStore = () => {
     console.log(globalStore)
-    setText(true);
+    setText(!text);
   };
 
   return (
