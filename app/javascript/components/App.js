@@ -5,8 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import gStore from "./reducer/configureStore";
 
-class App extends React.Component {
-  render () {
+const App = () => {
     return (
       <Provider store={gStore}>
         <BrowserRouter>
@@ -17,7 +16,6 @@ class App extends React.Component {
         </BrowserRouter>
       </Provider>
     );
-  }
 }
 
 export default App
